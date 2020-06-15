@@ -3,7 +3,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 const Footer = () => {
   return (
-    <MDBFooter color="blue" className="font-small pt-4 mt-4">
+    <MDBFooter color="stylish-color-dark" className="font-small pt-4 mt-4">
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
@@ -40,5 +40,5 @@ const Footer = () => {
     </MDBFooter>
   );
 }
-
+/// for other footers, go to https://mdbootstrap.com/docs/react/navigation/footer/
 export default Footer;

@@ -30,3 +30,9 @@ yarn add axios react-router-dom styled-components bootstrap react-bootstrap reac
 in index.html add
 
 ```<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">```
+
+in index.js add
+
+```import 'mdbreact/dist/css/mdb.css';```
+
+for other footers, go to https://mdbootstrap.com/docs/react/navigation/footer/
