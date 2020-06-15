@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Route } from 'react-router-dom';
 
 import Navigation from "./Navigation/Navigation";
-import Footer from "./Footer/Footer"
-import Home from "./Components/Home"
+import Footer from "./Footer/Footer";
+import Home from "./Components/Home";
+import Login from "./Login/Login";
 
 
 function App() {
@@ -13,7 +13,8 @@ function App() {
     <div className="App">
       <Navigation />
 
- <Route path="/" component={Home} />
+      <Route exact path="/" component={Home} />
+      <Route path="/login" component={Login} />
 
       <div className="footer">
          <Footer />
