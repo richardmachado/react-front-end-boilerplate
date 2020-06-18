@@ -21,12 +21,12 @@ export default function LoginForm(props) {
    
 
     axiosWithAuth()
-      .post("https://portfolio-machado.herokuapp.com/api/auth/login", data)
+      .post("http://localhost:4000/api/auth/login", data)
 
       .then(res => {
         
         localStorage.setItem("token", res.data.token);
-        props.history.push("/");
+        props.history.push("/dashboard");
       })
       .catch(err => {
         alert((err.message = "Invalid Username or Password"));
@@ -52,7 +52,7 @@ return (
               type='text'
               name='username'
               placeholder='username'
-              ref={register({ required: true, minLength: 6, maxLength: 15 })}
+              ref={register({ required: true, minLength: 1, maxLength: 15 })}
             />
           </Labels>
           {errors.username && errors.username.type === "required" && (

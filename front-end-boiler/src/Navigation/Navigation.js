@@ -10,11 +10,16 @@ import {
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem
+    DropdownItem,
+
 } from 'reactstrap';
+
+import LoginButton from "./LoginButton"
+
 
 
 class Header extends Component {
+    
     constructor(props) {
         super(props);
 
@@ -74,9 +79,8 @@ class Header extends Component {
                             <NavItem>
                                 <NavLink href="/login">Login</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink href="/">Link</NavLink>
-                            </NavItem>
+                            <LoginButton />
+                        
                            
                         </Nav>
                     </Collapse>

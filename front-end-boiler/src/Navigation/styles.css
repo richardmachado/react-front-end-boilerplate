@@ -1,0 +1,44 @@
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover{
+    color:red;
+    text-decoration: underline;
+}
+
+#header-login{
+    color: blue;
+}
+
+#header-login:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+#headerLogo {
+   
+    background-size: contain;
+    width: 110px;
+    height: 110px;
+    margin: auto 20px;
+  }
+
+  #app-name {
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: dodgerblue;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  #app-description {
+    font-size: 2.25rem;
+    color: #0A2738;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
